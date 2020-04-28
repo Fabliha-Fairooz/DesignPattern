@@ -16,10 +16,10 @@ public class Main {
 
         //Abstract Factory
         System.out.println("\nExecuting Abstract Factory . . . \n");
-        Employee employeeTanveer = EmployeeFactory.create("Programmer", "Android", "Tanveer");
-        Employee employeeSuman = EmployeeFactory.create("Programmer", "Stream", "Suman");
-        Employee employeeRedwan = EmployeeFactory.create("Manager", "HR", "Redwan");
-        Employee employeeNeePhong = EmployeeFactory.create("Manager", "Finance", "Nee Phong");
+        Employee employeeTanveer = EmployeeFactory.create("Programmer", "Android", "TAN");
+        Employee employeeSuman = EmployeeFactory.create("Programmer", "Stream", "SAM");
+        Employee employeeRedwan = EmployeeFactory.create("Manager", "HR", "RAM");
+        Employee employeeNeePhong = EmployeeFactory.create("Manager", "Finance", "NANG");
 
         employeeTanveer.doTask();
         employeeSuman.doTask();
@@ -32,16 +32,16 @@ public class Main {
 
         //// Factory
         System.out.println("\nExecuting Factory Method . . . \n");
-        Programmer aP = ProgrammerFactory.create("Android", "Tanveer");
-        Programmer sP = ProgrammerFactory.create("Stream", "Suman");
+        Programmer aP = ProgrammerFactory.create("Android", "TAM");
+        Programmer sP = ProgrammerFactory.create("Stream", "SAM");
 
         aP.writeCode();
         aP.debug();
-        aP.dance("Tanveer");
+        aP.dance("TAN");
 
         sP.writeCode();
         sP.debug();
-        sP.dance("Suman");
+        sP.dance("SAM");
         //Builder
         System.out.println("\nExecuting Builder Pattern . . . \n");
         CarUsingBuilderPatten bCar = new CarUsingBuilderPatten.Builder().withTotalWheels(4).withPassengerMaxCapacity(5)
